@@ -1,0 +1,4 @@
+comment { Create vpp connected interface }
+comment { create interface memif id 0 slave }
+comment { set int state memif0/0 up }
+comment { set int ip address memif0/0 10.10.1.2/24 }

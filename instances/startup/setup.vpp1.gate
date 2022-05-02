@@ -1,0 +1,10 @@
+comment { Create host interface }
+create host-interface name vpp1out
+set int state host-vpp1out up
+set int ip address host-vpp1out 10.10.1.2/24
+
+comment { Create vpp connected interface }
+comment { create interface memif id 0 master }
+comment { set int state memif0/0 up }
+comment { set int ip address memif0/0 10.10.1.1/24 }
+
