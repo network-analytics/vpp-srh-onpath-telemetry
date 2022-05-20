@@ -5,6 +5,11 @@ sudo ip link add name vpp1out type veth peer name vpp1host
 sudo ip link set dev vpp1out up
 sudo ip link set dev vpp1host up
 sudo ip addr add 10.10.1.1/24 dev vpp1host
+
+sudo ip link add name vpp2out type veth peer name vpp2host
+sudo ip link set dev vpp2out up
+sudo ip link set dev vpp2host up
+sudo ip addr add 10.11.1.1/24 dev vpp2host
 ```
 
 # Launch
@@ -39,6 +44,7 @@ set interface ip address del host-vpp1out 10.10.3.2/24
 show trace
 clear trace
 trace add af-packet-input 10
+trace add memif-input 10
 
 # ARP
 show ip neighbours
@@ -51,6 +57,23 @@ create interface memif id 0 master
 create interface memif id 0 slave
 
 
+# pcap
+pcap dispatch trace on max 10000 file vppcapture buffer-trace dpdk-input 1000
+pcap dispatch trace off
+
 
 # Services:
 /usr/lib/systemd/system/vpp.service
+
+
+https://s3-docs.fd.io/vpp/22.06/developer/corearchitecture/vnet.html
+https://s3-docs.fd.io/vpp/22.06/developer/corearchitecture/vnet.html#buffer-initialization-example
+https://vpp.flirble.org/stable-2110/dc/d7e/udp__input_8c_source.html
+
+https://www.programmersought.net/article/389265850.html
+https://www.mail-archive.com/vpp-dev@lists.fd.io/msg01820.html
+
+https://www.asumu.xyz/blog/2018/03/22/how-to-develop-vpp-plugins/
+
+#TODO: try probeflow ipfix
+https://s3-docs.fd.io/vpp/22.06/developer/plugins/flowprobe.html?highlight=ipfix#sample-configuration

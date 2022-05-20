@@ -1,0 +1,12 @@
+
+sudo ip link add name vpp1out type veth peer name vpp1host
+sudo ip link set dev vpp1out up
+sudo ip link set dev vpp1host up
+sudo ip addr add 10.10.1.1/24 dev vpp1host
+
+sudo ip link add name vpp2out type veth peer name vpp2host
+sudo ip link set dev vpp2out up
+sudo ip link set dev vpp2host up
+sudo ip addr add 10.11.1.1/24 dev vpp2host
+
+echo -n "hello" | nc -4u -w1 -p11111 10.10.1.2 22222
