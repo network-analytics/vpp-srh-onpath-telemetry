@@ -16,3 +16,8 @@ echo -n "hello" | nc -4u -w1 -p11111 10.10.1.2 22222
 sudo tcpdump -i vpp2host -w ~/Unyte/dump1.pcap
 
 export STARTUP_CONF=/home/vagrant/Unyte/vpp/ipfix/vpp_startup.conf
+
+
+export STARTUP_CONF=/home/vagrant/Unyte/vpp/instances_srh/1_vpp.conf
+export STARTUP_CONF=/home/vagrant/Unyte/vpp/instances_srh/2_vpp.conf
+export STARTUP_CONF=/home/vagrant/Unyte/vpp/instances_srh/3_vpp.conf
