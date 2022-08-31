@@ -58,7 +58,7 @@ create interface memif id 0 slave
 
 
 # pcap
-pcap dispatch trace on max 10000 file vppcapture buffer-trace dpdk-input 1000
+pcap dispatch trace on max 10000 file vppcapture.pcap buffer-trace dpdk-input 100
 pcap dispatch trace off
 
 
