@@ -29,3 +29,7 @@ make rebuild
 make run
 
 ```
+<!-- 
+```shell
+apt install vpp-ext-deps ?
+``` -->
