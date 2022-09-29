@@ -28,11 +28,11 @@ tmux send-keys 'export STARTUP_CONF=/home/vagrant/Unyte/vpp/dev_srh_export/3_vpp
 
 tmux select-pane -t 2
 tmux send-keys 'cd /home/vagrant/Unyte/vpp/dev_srh_export' C-m
-tmux send-keys 'sudo python3 sender-udp.py' C-m
+# tmux send-keys 'sudo python3 sender-udp.py' C-m
 
 tmux select-pane -t 3
 tmux send-keys 'cd /home/vagrant/Unyte/' C-m
-tmux send-keys 'sudo tcpdump -i vpp2host' C-m
+# tmux send-keys 'sudo tcpdump -i vpp2host' C-m
 
 tmux select-pane -t 5
 tmux send-keys 'cd /home/vagrant/Unyte/' C-m
