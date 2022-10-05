@@ -1,7 +1,14 @@
 #!/bin/bash
-tmux kill-session -t dev_jbayaux_ioam
 
-tmux new -s dev_jbayaux_ioam -d
+tmux has-session -t dev_jbayaux_ioam
+if [ $? != 0 ]
+then
+    tmux new -s dev_jbayaux_ioam -d
+else 
+    tmux kill-session -t dev_jbayaux_ioam
+    tmux new -s dev_jbayaux_ioam -d
+fi
+
 tmux select-pane -t 0
 tmux split-window -v -p 70
 tmux select-pane -t 1
