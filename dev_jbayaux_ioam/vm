@@ -26,6 +26,6 @@ sudo ip route add 2001:f4::1/126 via 2001:f1::2
 # sudo ip route add 10.10.1.2/32 via 10.10.1.1
 # sudo ip route add 10.11.4.2/32 via 10.11.4.1
 
-export STARTUP_CONF=/home/vagrant/Unyte/vpp/dev_ioam/1_vpp.conf
-export STARTUP_CONF=/home/vagrant/Unyte/vpp/dev_ioam/2_vpp.conf
-export STARTUP_CONF=/home/vagrant/Unyte/vpp/dev_ioam/3_vpp.conf
+export STARTUP_CONF=/home/vagrant/Unyte/vpp/dev_jbayaux_ioam/1_vpp.conf
+export STARTUP_CONF=/home/vagrant/Unyte/vpp/dev_jbayaux_ioam/2_vpp.conf
+export STARTUP_CONF=/home/vagrant/Unyte/vpp/dev_jbayaux_ioam/3_vpp.conf
