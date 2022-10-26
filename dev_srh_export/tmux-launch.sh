@@ -1,5 +1,13 @@
 #!/bin/bash
-tmux kill-session -t dev_srh_export
+
+tmux has-session -t dev_srh_export
+if [ $? != 0 ]
+then
+    tmux new -s dev_srh_export -d
+else 
+    tmux kill-session -t dev_srh_export
+    tmux new -s dev_srh_export -d
+fi
 
 tmux new -s dev_srh_export -d
 tmux select-pane -t 0
