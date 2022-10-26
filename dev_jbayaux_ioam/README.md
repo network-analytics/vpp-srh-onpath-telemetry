@@ -12,6 +12,9 @@ git checkout feature/ioam-jbayaux
 make build
 ```
 
+## Topology
+See [topology](topology.md)
+
 ## Run
 
 ### Create virtual interfaces on the server:
