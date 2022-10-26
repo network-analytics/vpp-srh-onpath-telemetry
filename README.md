@@ -6,13 +6,16 @@ This repository have the vpp configurations for the following POCs in VPP:
 
 ## Dependencies
 - VPP fork repository: [INSA-unyte-vpp](https://github.com/insa-unyte/vpp)
+- Tested in `ubuntu/focal64` using [Vagrantfile](./Vagrantfile)
 
 ## Running
 
 ### draft-tgraf-opsawg-ipfix-srv6-srh
 
-The POC is implemented in [dev_srh_export](./dev_srh_export)
+- The POC is implemented in [dev_srh_export](./dev_srh_export)
+- VPP source code: branch `feature/srh-ipfix` of [INSA-unyte-vpp](https://github.com/insa-unyte/vpp)
 
 ### draft-tgraf-opsawg-ipfix-on-path-telemetry
 
-The POC is implemented in [dev_jbayaux_ioam](./dev_jbayaux_ioam)
+- The POC is implemented in [dev_jbayaux_ioam](./dev_jbayaux_ioam)
+- VPP source code: branch `feature/ioam-jbayaux` of [INSA-unyte-vpp](https://github.com/insa-unyte/vpp)
