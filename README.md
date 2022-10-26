@@ -4,6 +4,9 @@ This repository have the vpp configurations for the following POCs in VPP:
 - [draft-tgraf-opsawg-ipfix-srv6-srh](https://datatracker.ietf.org/doc/html/draft-tgraf-opsawg-ipfix-srv6-srh-05)
 - [draft-tgraf-opsawg-ipfix-on-path-telemetry](https://datatracker.ietf.org/doc/html/draft-tgraf-opsawg-ipfix-on-path-telemetry-00)
 
+## Dependencies
+- VPP fork repository: [INSA-unyte-vpp](https://github.com/insa-unyte/vpp)
+
 ## Running
 
 ### draft-tgraf-opsawg-ipfix-srv6-srh

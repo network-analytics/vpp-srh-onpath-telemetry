@@ -14,7 +14,7 @@ make build
 
 ## Run
 
-### Create virtual interfaces:
+### Create virtual interfaces on the server:
 ```shell
 sudo ip link add name vpp1out type veth peer name vpp1host
 sudo ip link set dev vpp1out up
