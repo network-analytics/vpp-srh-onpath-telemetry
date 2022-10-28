@@ -33,3 +33,16 @@ make run
 ```shell
 apt install vpp-ext-deps ?
 ``` -->
+
+## RHEL9
+```shell
+sudo yum update
+sudo yum install yum-utils
+sudo yum install pygpgme yum-utils
+
+# have to change the makefile, remove some dependencies and remove the dependencies check in `make build`
+# create vpp group 
+groupadd vpp
+sudo usermod -a -G vpp <current_user>
+newgrp vpp
+```

@@ -9,7 +9,6 @@ else
     tmux new -s dev_srh_export -d
 fi
 
-tmux new -s dev_srh_export -d
 tmux select-pane -t 0
 tmux split-window -v -p 70
 tmux select-pane -t 1
