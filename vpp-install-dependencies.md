@@ -41,6 +41,8 @@ sudo yum install yum-utils
 sudo yum install pygpgme yum-utils
 
 # have to change the makefile, remove some dependencies and remove the dependencies check in `make build`
+make build
+
 # create vpp group 
 groupadd vpp
 sudo usermod -a -G vpp <current_user>
