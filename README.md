@@ -18,4 +18,4 @@ This repository have the vpp configurations for the following POCs in VPP:
 ### draft-tgraf-opsawg-ipfix-on-path-telemetry
 
 - The POC is implemented in [dev_jbayaux_ioam](./dev_jbayaux_ioam)
-- VPP source code: branch `feature/ioam-jbayaux` of [INSA-unyte-vpp](https://github.com/insa-unyte/vpp)
+- VPP source code: branch `feature/ipfix-onpath-telemetry` of [INSA-unyte-vpp](https://github.com/insa-unyte/vpp)
