@@ -19,3 +19,8 @@ This repository have the vpp configurations for the following POCs in VPP:
 
 - The POC is implemented in [dev_jbayaux_ioam](./dev_jbayaux_ioam)
 - VPP source code: branch `feature/ipfix-onpath-telemetry` of [INSA-unyte-vpp](https://github.com/insa-unyte/vpp)
+
+
+## Credits
+
+IOAM patch was implemented by [jbayaux](https://github.com/jbayaux) in [vpp](https://github.com/jbayaux/vpp)
