@@ -1,5 +1,5 @@
 
-# Deploy SRH topology (WIP)
+# Deploy SRH topology
 ## Install
 ```shell
 git clone https://gerrit.fd.io/r/vpp
@@ -14,6 +14,10 @@ make build
 
 ## Topology
 See [topology](topology.md)
+
+## Policy
+There is a SR tunnel between the first node and the last node.
+In the SRv6 packet, the IOAM trace option is included in the hop-by-hop option.
 
 ## Run
 

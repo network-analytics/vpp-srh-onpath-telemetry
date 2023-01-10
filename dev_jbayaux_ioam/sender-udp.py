@@ -25,6 +25,14 @@ with socket.socket(socket.AF_INET6, socket.SOCK_DGRAM) as s:
     #print("BOUND", sending_ip, sending_port)
     #sleep(2)
     while True:
-        s.sendto(bytes(packet, encoding='utf-8'), (sending_ip, sending_port)) #TODO: test in server
+        s.sendto(bytes(packet, encoding='utf-8'), (sending_ip, sending_port))
+        # s.sendto(bytes(packet, encoding='utf-8'), (sending_ip, sending_port))
+        # s.sendto(bytes(packet, encoding='utf-8'), (sending_ip, sending_port))
+        # s.sendto(bytes(packet, encoding='utf-8'), (sending_ip, sending_port))
+        # s.sendto(bytes(packet, encoding='utf-8'), (sending_ip, sending_port))
+        # s.sendto(bytes(packet, encoding='utf-8'), (sending_ip, sending_port))
+        # s.sendto(bytes(packet, encoding='utf-8'), (sending_ip, sending_port))
+        # s.sendto(bytes(packet, encoding='utf-8'), (sending_ip, sending_port))
+        # s.sendto(bytes(packet, encoding='utf-8'), (sending_ip, sending_port))
         sleep(1)
     # data = s.recv(1024)
