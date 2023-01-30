@@ -1,7 +1,7 @@
 # VPP topologies
 
 This repository has the VPP configurations for the following POCs in VPP:
-- [draft-ietf-opsawg-ipfix-srv6-srh](https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-ipfix-srv6-srh)
+- [draft-ietf-opsawg-ipfix-srv6-srh](https://datatracker.ietf.org/doc/draft-ietf-opsawg-ipfix-srv6-srh/)
 - [draft-ietf-opsawg-ipfix-on-path-telemetry](https://datatracker.ietf.org/doc/draft-ietf-opsawg-ipfix-on-path-telemetry/)
 
 ## Dependencies
