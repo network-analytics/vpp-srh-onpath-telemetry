@@ -26,18 +26,18 @@ In the SRv6 packet, the IOAM trace option is included in the hop-by-hop option.
 sudo ip link add name vpp1out type veth peer name vpp1host
 sudo ip link set dev vpp1out up
 sudo ip link set dev vpp1host up
-sudo ip addr add 10.10.1.1/24 dev vpp1host
+sudo ip addr add 192.168.111.1/24 dev vpp1host
 sudo ip -6 addr add 2001:f1::1/126 dev vpp1host
 
 sudo ip link add name vpp2out type veth peer name vpp2host
 sudo ip link set dev vpp2out up
 sudo ip link set dev vpp2host up
-sudo ip addr add 10.11.4.1/24 dev vpp2host
+sudo ip addr add 192.168.114.1/24 dev vpp2host
 sudo ip -6 addr add 2001:f4::1/126 dev vpp2host
 
-sudo ip route add 10.10.2.0/24 via 10.10.1.2
+sudo ip route add 192.168.112.0/24 via 192.168.111.2
 sudo ip route add 2001:f2::0/126 via 2001:f1::2
-sudo ip route add 10.10.3.0/24 via 10.10.1.2
+sudo ip route add 192.168.113.0/24 via 192.168.111.2
 sudo ip route add 2001:f3::0/126 via 2001:f1::2
 
 sudo ip route add 2001:f4::1/126 via 2001:f1::2
@@ -51,21 +51,21 @@ Multiple terminals can be launched using `tmux`. See the script [tmux-launch.sh]
 Terminal 1: Running encap node
 ```shell
 cd <vpp-repository>
-export STARTUP_CONF=/<this_repository>/dev_jbayaux_ioam/1_vpp.conf
+export STARTUP_CONF=/<this_repository>/dev_jbayaux_ioam_hackathon116/1_vpp.conf
 make run
 ```
 
 Terminal 2: Running transit node
 ```shell
 cd <vpp-repository>
-export STARTUP_CONF=/<this_repository>/dev_jbayaux_ioam/2_vpp.conf
+export STARTUP_CONF=/<this_repository>/dev_jbayaux_ioam_hackathon116/2_vpp.conf
 make run
 ```
 
 Terminal 3: Running decap node
 ```shell
 cd <vpp-repository>
-export STARTUP_CONF=/<this_repository>/dev_jbayaux_ioam/3_vpp.conf
+export STARTUP_CONF=/<this_repository>/dev_jbayaux_ioam_hackathon116/3_vpp.conf
 make run
 ```
 

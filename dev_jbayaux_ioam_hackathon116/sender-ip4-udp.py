@@ -3,7 +3,7 @@ import sys
 from time import sleep
 
 bind_device="vpp1host"
-sending_ip="10.11.4.1"
+sending_ip="192.168.114.1"
 sending_port=4001
 
 packet_size=400

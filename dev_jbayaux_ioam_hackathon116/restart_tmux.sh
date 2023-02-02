@@ -13,7 +13,7 @@ do
     sudo kill -9 $i;
 done
 
-# tmux attach -t dev_jbayaux_ioam
+# tmux attach -t dev_jbayaux_ioam_hackathon116
 
 tmux select-pane -t 0
 tmux send-keys 'make run' C-m
