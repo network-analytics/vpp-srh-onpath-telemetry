@@ -23,4 +23,4 @@ This repository have the vpp configurations for the following POCs in VPP:
 
 ## Credits
 
-IOAM patch was implemented by [jbayaux](https://github.com/jbayaux) in [vpp](https://github.com/jbayaux/vpp)
+IOAM patch was implemented by [jbayaux](https://github.com/jbayaux) in [ioam-vpp](https://github.com/Advanced-Observability/ioam-vpp)
