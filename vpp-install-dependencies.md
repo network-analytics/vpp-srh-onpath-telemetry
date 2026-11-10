@@ -20,6 +20,14 @@ sudo apt-get remove --purge "vpp*"
 make install-dep
 make install-ext-deps
 
+# add PKG_VERSION and PKG_SUFFIX if not working
+# make install-ext-deps PKG_VERSION=9.11 PKG_SUFFIX=1
+
+python3 -m pip download \
+    --dest build/external/downloads/ \
+    setuptools==70.3.0
+
+
 # Note: need 8GB or more for compiling
 make build
 

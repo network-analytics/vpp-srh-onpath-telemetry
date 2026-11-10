@@ -21,6 +21,12 @@ This repository has the VPP configurations for the following POCs in [VPP](https
 - VPP source code: branch `feature/ipfix-onpath-telemetry` of [network-analytics-vpp](https://github.com/network-analytics/vpp/tree/feature/ipfix-onpath-telemetry)
 
 
+### draft-netana-ippm-ioam-on-path-delay
+
+- The POC is implemented in [dev_ioam_dex_extensions](./dev_ioam_dex_extensions)
+- VPP source code: branch `feature/ioam-dex-extensions` of [network-analytics-vpp](https://github.com/network-analytics/vpp/tree/feature/ioam-dex-extensions)
+
+
 ## Credits
 
 IOAM patch was implemented by [jbayaux](https://github.com/jbayaux) in [ioam-vpp](https://github.com/Advanced-Observability/ioam-vpp)
