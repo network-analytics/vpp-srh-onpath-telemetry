@@ -7,7 +7,7 @@ fi
 
 
 VPP_PROCESSES=$(ps aux | grep "vpp" | grep -v "grep" | awk '{print $2}')
-VPP_REPO=/home/vagrant/vpp-master/
+VPP_REPO=/home/vagrant/on-path-delay/vpp
 
 for i in $VPP_PROCESSES ;
 do 

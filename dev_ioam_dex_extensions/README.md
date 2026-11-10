@@ -51,21 +51,21 @@ Multiple terminals can be launched using `tmux`. See the script [tmux-launch.sh]
 Terminal 1: Running encap node
 ```shell
 cd <vpp-repository>
-export STARTUP_CONF=/<this_repository>/dev_jbayaux_ioam/1_vpp.conf
+export STARTUP_CONF=/<this_repository>/dev_ioam_dex_extensions/1_vpp.conf
 make run
 ```
 
 Terminal 2: Running transit node
 ```shell
 cd <vpp-repository>
-export STARTUP_CONF=/<this_repository>/dev_jbayaux_ioam/2_vpp.conf
+export STARTUP_CONF=/<this_repository>/dev_ioam_dex_extensions/2_vpp.conf
 make run
 ```
 
 Terminal 3: Running decap node
 ```shell
 cd <vpp-repository>
-export STARTUP_CONF=/<this_repository>/dev_jbayaux_ioam/3_vpp.conf
+export STARTUP_CONF=/<this_repository>/dev_ioam_dex_extensions/3_vpp.conf
 make run
 ```
 

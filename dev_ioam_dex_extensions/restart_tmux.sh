@@ -9,11 +9,11 @@ VPP_PROCESSES=$(ps aux | grep "vpp" | grep -v "grep" | awk '{print $2}')
 
 for i in $VPP_PROCESSES ;
 do 
-    echo "Killing sender program $i process";
+    echo "Killing vpp process $i";
     sudo kill -9 $i;
 done
 
-# tmux attach -t dev_jbayaux_ioam
+# tmux attach -t dev_ioam_dex_extensions
 
 tmux select-pane -t 0
 tmux send-keys 'make run' C-m
