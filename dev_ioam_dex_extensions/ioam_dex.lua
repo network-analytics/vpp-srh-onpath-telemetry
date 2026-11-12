@@ -105,6 +105,7 @@ local function dissect_dex(o, pinfo, tree)
   local trace_type = o(8, 3):uint()
 
   local sub = tree:add(dex, o)
+  sub:prepend_text("IPv6 Hop-by-Hop Option, ")
   sub:append_text(string.format(": namespace %d, trace type 0x%06x", namespace, trace_type))
 
   local ot = sub:add(f.opt_type, o(0, 1))
@@ -187,6 +188,7 @@ local function dissect_dex(o, pinfo, tree)
   sub:add(f.capture_delta_us, span, delta.secs * 1e6 + delta.nsecs / 1e3):set_generated()
 end
 
+-- The built-in IPv6 dissector offers no hook for Hop-by-Hop options, so the tree can only be appended at the end
 function dex.dissector(tvb, pinfo, tree)
   if not hbh_field then
     return
